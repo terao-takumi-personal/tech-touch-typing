@@ -3,7 +3,8 @@
     "paths": {
       "@/*": ["./*"],
       "@/styles/*": ["./styles/*"],
-      "@/images/*": ["./public/images/*"]
+      "@/images/*": ["./public/images/*"],
+      "@/features/*": ["./features/*"]
     }
   }
 }

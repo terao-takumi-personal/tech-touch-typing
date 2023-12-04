@@ -1,18 +1,19 @@
+import styles from './page.module.css'
+import MainTheme from "@/components/elements/MainTheme";
 import Image from 'next/image'
 import titleImage from "@/images/title.svg";
-import styles from './page.module.css'
-import Button from "@/components/elements/Button";
+import LinkButton from "@/features/components/LinkButton";
 
 export default function Home() {
     return (
-        <main className={styles.main}>
+        <MainTheme>
             <div>
                 <h2 className={styles.subTitle}>エンジニアのためのタイピング練習</h2>
-                <Image src={titleImage} className={styles.title} alt="TECH TOUCH TYPING"/>
+                <Image src={titleImage} className={styles.title} alt="TECH TOUCH TYPING" priority={true}/>
                 <div className={styles.buttonLayout}>
-                    <Button>play</Button>
+                    <LinkButton href='/game'>play</LinkButton>
                 </div>
             </div>
-        </main>
+        </MainTheme>
     )
 }
