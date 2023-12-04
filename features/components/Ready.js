@@ -1,4 +1,5 @@
 import {useEffect} from "react";
+import GameText from "@/components/elements/GameText";
 
 // ゲーム開始時にスペースキーを押したらカウントダウン開始
 export default function Ready({StartCountDown}) {
@@ -14,8 +15,5 @@ export default function Ready({StartCountDown}) {
         };
     }, []);
 
-    return (
-        <p>スペースキーを押して開始</p>
-    );
-
+    return <GameText text={'スペースキーで開始'} />;
 }

@@ -1,4 +1,5 @@
 import {useState,useEffect} from "react";
+import GameText from "@/components/elements/GameText";
 
 const COUNT = 3;
 
@@ -20,7 +21,5 @@ export default function CountDown({startGame}) {
         }
     }, [countdown]);
 
-    return (
-        <p>{countdown}</p>
-    );
+    return <GameText text={countdown} />;
 }
