@@ -4,7 +4,6 @@ import ModalWindow from "@/components/elements/ModalWindow";
 import Link from "next/link";
 import GameSequence from "@/features/components/GameSequence";
 
-
 export default function GamePage() {
     return (
         <MainTheme>
@@ -12,9 +11,7 @@ export default function GamePage() {
                 <div className={styles.header}>
                     <Link href='/'><p className={styles.linkText}>&gt; back</p></Link>
                 </div>
-                <div className={styles.body}>
-                    <GameSequence />
-                </div>
+                <GameSequence/>
             </ModalWindow>
         </MainTheme>
     );

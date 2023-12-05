@@ -1,5 +1,6 @@
 import {useState,useEffect} from "react";
 import GameText from "@/components/elements/GameText";
+import WindowCenter from "@/components/layouts/WindowCenter";
 
 const COUNT = 3;
 
@@ -21,5 +22,9 @@ export default function CountDown({startGame}) {
         }
     }, [countdown]);
 
-    return <GameText text={countdown} />;
+    return (
+        <WindowCenter>
+            <GameText text={countdown} />
+        </WindowCenter>
+    );
 }
