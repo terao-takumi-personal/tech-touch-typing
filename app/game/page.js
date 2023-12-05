@@ -2,7 +2,7 @@ import styles from './page.module.css';
 import MainTheme from "@/components/elements/MainTheme";
 import ModalWindow from "@/components/elements/ModalWindow";
 import Link from "next/link";
-import Game from "@/features/components/Game";
+import GameSequence from "@/features/components/GameSequence";
 
 
 export default function GamePage() {
@@ -13,7 +13,7 @@ export default function GamePage() {
                     <Link href='/'><p className={styles.linkText}>&gt; back</p></Link>
                 </div>
                 <div className={styles.body}>
-                    <Game/>
+                    <GameSequence />
                 </div>
             </ModalWindow>
         </MainTheme>

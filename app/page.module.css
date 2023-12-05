@@ -1,6 +1,8 @@
 .title {
     margin-top: 24px;
     text-align: center;
+    min-width: 850px;
+    min-height: 65px;
 }
 
 .subTitle {
