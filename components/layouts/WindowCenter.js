@@ -1,4 +1,4 @@
-import styles from '@/styles/components/layouts/windowCenter.module.css';
+import styles from '@/styles/components/layouts/WindowCenter.module.css';
 
 export default function WindowCenter({children}) {
     return (
