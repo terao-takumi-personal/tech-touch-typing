@@ -26,7 +26,3 @@ export default function TypingCode({code, goNext}) {
 
     return <Code code={code} index={typedWordCount} />;
 }
-
-function a() {
-
-}
