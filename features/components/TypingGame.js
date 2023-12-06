@@ -6,11 +6,17 @@ import WindowTop from "@/components/layouts/WindowTop";
 import WindowCenter from "@/components/layouts/WindowCenter";
 import CircleTimer from "@/components/elements/CircleTimer";
 
-const DURATION = 120; // ゲーム時間
+const DURATION = 10; // ゲーム時間
 
 // ゲームを管理するコンポーネント
-export default function TypingGame({ codeList, showResult }) {
+export default function TypingGame({
+  codeList,
+  incrementTypedWordCount,
+  registerMissedWordList,
+  showResult,
+}) {
   const [codeIndex, setCodeIndex] = useState(0);
+
   const goNext = () => {
     setCodeIndex((prev) => prev + 1);
   };
@@ -21,7 +27,12 @@ export default function TypingGame({ codeList, showResult }) {
         <CircleTimer duration={DURATION} showResult={showResult} />
       </WindowTop>
       <WindowCenter>
-        <TypingCode code={codeList[codeIndex]} goNext={goNext} />
+        <TypingCode
+          code={codeList[codeIndex]}
+          incrementTypedWordCount={incrementTypedWordCount}
+          registerMissedWordList={registerMissedWordList}
+          goNext={goNext}
+        />
       </WindowCenter>
     </>
   );
