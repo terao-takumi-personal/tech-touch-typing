@@ -7,16 +7,24 @@ export default function Code({ code, index }) {
       dangerouslySetInnerHTML={{ __html: code.slice(0, index) }}
     />
   );
+
+  const currentWord = (
+    <span
+      className={styles.current}
+      dangerouslySetInnerHTML={{ __html: code.slice(index, index + 1) }}
+    />
+  );
   const unTypedWords = (
     <span
       className={styles.untyped}
-      dangerouslySetInnerHTML={{ __html: code.slice(index) }}
+      dangerouslySetInnerHTML={{ __html: code.slice(index + 1) }}
     />
   );
 
   return (
     <p className={styles.code}>
       {typedWords}
+      {currentWord}
       {unTypedWords}
     </p>
   );

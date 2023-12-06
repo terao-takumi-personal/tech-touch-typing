@@ -1,12 +1,17 @@
 .typed {
-    color: gray;
+  color: gray;
+}
+
+.current {
+  color: white;
+  border-bottom: 3px solid skyblue;
 }
 
 .untyped {
-    color: white;
+  color: white;
 }
 
 .code {
-  font-family: 'JetBrainsMono';
-  font-size: 30px;
+  font-family: "JetBrainsMono";
+  font-size: 25px;
 }
