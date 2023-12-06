@@ -1,9 +1,14 @@
 .header {
-    position: absolute;
-    display: flex;
+  position: absolute;
+  display: flex;
 }
 
 .linkText {
-    color: white;
-    font-size: 24px;
+  color: white;
+  font-size: 24px;
+}
+
+.header:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
 }

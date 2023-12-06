@@ -1,9 +1,12 @@
 .typed {
     color: gray;
-    font-size: 24px;
 }
 
 .untyped {
     color: white;
-    font-size: 24px;
+}
+
+.code {
+  font-family: 'JetBrainsMono';
+  font-size: 30px;
 }
