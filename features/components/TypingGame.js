@@ -6,7 +6,7 @@ import WindowTop from "@/components/layouts/WindowTop";
 import WindowCenter from "@/components/layouts/WindowCenter";
 import CircleTimer from "@/components/elements/CircleTimer";
 
-const DURATION = 10; // ゲーム時間
+const DURATION = 60; // ゲーム時間
 
 // ゲームを管理するコンポーネント
 export default function TypingGame({

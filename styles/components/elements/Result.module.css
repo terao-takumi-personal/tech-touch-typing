@@ -1,0 +1,49 @@
+.rankTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+.rankResult {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 54px;
+  color: white;
+}
+
+.detailsWrapper {
+  margin: 10px auto 0;
+  width: 360px;
+}
+
+.scoreWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.scoreWrapper:not(:first-child) {
+  margin-top: 10px;
+}
+
+.scoreTitle {
+  margin-left: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.scoreResult {
+  margin-right: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.buttonWrapper {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}

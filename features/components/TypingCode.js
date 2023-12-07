@@ -28,7 +28,7 @@ export default function TypingCode({
           setTypedWordCount((prev) => prev + 1);
         }
       } else {
-        registerMissedWordList(key);
+        registerMissedWordList(currentWord);
       }
     };
     document.addEventListener("keydown", keyDownHandler);

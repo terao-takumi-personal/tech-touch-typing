@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <MainTheme>
       <div>
-        <h2 className={styles.subTitle}>エンジニアのためのタイピング練習</h2>
+        <h2 className={styles.subTitle}>Typing Practice for Engineers</h2>
         <Image
           src={titleImage}
           className={styles.title}
